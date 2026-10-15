@@ -32,7 +32,7 @@ export default async function Navbar() {
             <div className="flex items-center gap-3">
                 <Link href="/carts" aria-label="Open shopping cart">
                     <div className="w-12 h-12 flex shrink-0">
-                        <img src="assets/icons/cart.svg" alt="icon"/>
+                        <img src="/assets/icons/cart.svg" alt="icon"/>
                     </div>
                 </Link>
                 <>
