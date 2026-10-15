@@ -1,5 +1,6 @@
 'use client'
 import { signIn } from "../lib/actions";
+import Link from "next/link";
 import { useFormState, useFormStatus } from "react-dom";
 import { useState } from "react";
 const initialFormState = {
@@ -75,10 +76,10 @@ export default function Page() {
                   <img src="/assets/icons/eye.svg" alt="" className="h-5 w-5" />
                 </button>
               </label>
-              <a href="/" className="mt-2 block text-right text-xs font-semibold text-[#0d5cd7] hover:underline">Forgot password?</a>
+              <Link href="/" className="mt-2 block text-right text-xs font-semibold text-[#0d5cd7] hover:underline">Forgot password?</Link>
             </div>
             <SubmitButton />
-            <p className="text-center text-sm text-[#687386]">New here? <a href="/sign-up" className="font-bold text-[#0d5cd7] hover:underline">Create an account</a></p>
+            <p className="text-center text-sm text-[#687386]">New here? <Link href="/sign-up" className="font-bold text-[#0d5cd7] hover:underline">Create an account</Link></p>
           </form>
         </section>
       </div>
